@@ -20,7 +20,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:load": "node scripts/load-test.mjs",
-    "deploy": "wrangler deploy"
+    "deploy": "npm run build && npx wrangler dev"
   },
   "dependencies": {
     "@react-three/fiber": "^9.6.1",
